@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_new_post"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <EditText
+            android:layout_margin="@dimen/card_padding"
+            android:padding="@dimen/spacing_xxxs"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="7dp"
+            android:gravity="start"
+            android:id="@+id/edt_title"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:hint="@string/text_post_title"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:layout_margin="@dimen/card_padding"
+            android:padding="@dimen/spacing_xxxs"
+            android:background="@drawable/edittext_background"
+            android:layout_marginTop="7dp"
+            android:gravity="start"
+            android:id="@+id/edt_description"
+            android:layout_width="match_parent"
+            android:maxLines="10"
+            android:minLines="5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_title"
+            android:hint="@string/text_post_detail"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btn_create_post"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/bottom_margin"
+            android:layout_marginLeft="@dimen/bottom_margin"
+            android:layout_marginRight="@dimen/bottom_margin"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textAllCaps="false"
+            android:text="@string/text_create_post"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:rippleColor="@color/colorPrimaryDark"
+            app:cornerRadius="@dimen/card_margin"
+            app:strokeColor="@color/colorPrimaryDark"
+            app:strokeWidth="@dimen/card_margin"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/postFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/postList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:descendantFocusability="blocksDescendants"
+            android:duplicateParentState="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".activities.MainActivity"
+            tools:listitem="@layout/post_item" />
+
+
+        <com.crystal.crystalpreloaders.widgets.CrystalPreloader
+            android:id="@+id/containerProgressIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:crs_pl_bg_color="@color/black_anime"
+            app:crs_pl_fg_color="@color/black"
+            app:crs_pl_size="small"
+            app:crs_pl_style="ball_scale"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintRight_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/deleteAllPostFb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/spacing_sm"
+            android:clickable="true"
+            android:paddingBottom="50dp"
+            app:backgroundTint="@color/black_anime"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/ic_delete" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

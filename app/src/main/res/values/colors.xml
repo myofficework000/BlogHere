@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2d5986</color>
+    <color name="colorPrimaryDark">#0088cc</color>
+    <color name="colorAccent">#b30000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#2196F3</color>
+    <color name="black">#2d2d2d</color>
+    <color name="yellow">#FFD935</color>
+    <color name="red">#BF360C</color>
+    <color name="colorPrimaryLight">#B2DFDB</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="error_text">#c0392b</color>
+    <color name="colorBackground">#4c4c4c</color>
+    <color name="heart_primary_color">#da4439</color>
+    <color name="heart_secondary_color">#8a098c</color>
+    <color name="colorStatusConnected">#43A047</color>
+    <color name="colorStatusNotConnected">#D32F2F</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="background">#c2c2d6</color>
+
+    <color name="line_bg_anime">@color/finestGray</color>
+    <color name="fab_bg_anime">@color/yellow</color>
+    <color name="black_anime">#3B3B3B</color>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Spacing for margin and padding -->
+    <dimen name="spacing_xxxxs">2dp</dimen>
+    <dimen name="spacing_xxxs">4dp</dimen>
+    <dimen name="spacing_xxs">8dp</dimen>
+    <dimen name="spacing_xs">12dp</dimen>
+    <dimen name="spacing_sm">16dp</dimen>
+    <dimen name="spacing_md">24dp</dimen>
+    <dimen name="spacing_lg">32dp</dimen>
+    <dimen name="spacing_xlg">40dp</dimen>
+    <dimen name="spacing_xxlg">48dp</dimen>
+    <dimen name="spacing_xxxlg">56dp</dimen>
+    <dimen name="spacing_xxxxlg">64dp</dimen>
+
+
+    <dimen name="card_margin">5dp</dimen>
+    <dimen name="def_small_margin">4dp</dimen>
+    <dimen name="card_padding">4dp</dimen>
+    <dimen name="bottom_margin">25dp</dimen>
+    <dimen name="large_margin">45dp</dimen>
+    <dimen name="extra_large_margin">60dp</dimen>
+    <dimen name="def_small_avatar_size">24dp</dimen>
+</resources>
